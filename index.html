@@ -9,7 +9,7 @@ window.onload = function () {
          if (response.ok) {
              return json;
          }
-         return Promise.reject(new Error('Something went wrong.'));
+         return Promise.reject(new Error('Something went wrong!'));
      })
      .then((response) => {
          document.getElementById('message').innerHTML = JSON.stringify(response);
@@ -20,7 +20,7 @@ window.onload = function () {
 </script>
 </head>
 <body>
-<h1>Everything goes well :)</h1>
+<h1>Is everthing goes well?</h1>
 <p id="message"></p>
 <p id="error"></p>
 </body>
